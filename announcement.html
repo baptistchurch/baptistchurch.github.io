@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>波德華人浸信會</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+
+    body {
+        font-size: 16px;
+    }
+</style>
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+        id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
+            Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>波德華人浸信會</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">教會歷史</a>
+            <a href="bylaw.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">波德華人浸信會會章</a>
+            <a href="sermons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">證道錄音下載</a>
+            <a href="calendar.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">日歷</a>
+            <a href="announcement.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white  w3-white">通知</a>
+            <a href="map.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">本會地址</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+        <span>波德華人浸信會</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:0px" id="showcase">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>通知</b></h1>
+            <hr style="width:50px;border:5px solid DodgerBlue" class="w3-round">
+        </div>
+
+
+        <!-- Services -->
+        <div class="w3-container" id="services" style="margin-top:0px">
+            <a class="twitter-timeline" href="https://twitter.com/BoulderBaptist?ref_src=twsrc%5Etfw">Tweets by
+                BoulderBaptist</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">© Boulder Chinese Baptist Church, 5075 Jay Road, Boulder, CO 80301</p>
+    </div>
+
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
