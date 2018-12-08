@@ -18,6 +18,10 @@
     body {
         font-size: 16px;
     }
+
+    .mySlides {
+        display: none;
+    }
 </style>
 
 <body>
@@ -66,6 +70,16 @@
 
 
         <!-- Content -->
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="images/LYCB.JPG" style="width:100%">
+            <img class="mySlides" src="images/church.jpg" style="width:100%">
+            <img class="mySlides" src="images/baby.JPG" style="width:100%">
+            <img class="mySlides" src="images/modd.jpg" style="width:100%">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
         <div class="w3-container" id="services" style="margin-top:75px">
             <h3>
                 <p>波德華人浸信會為美南浸信會成員; 是由一群信奉基督的信徒, 在科羅拉多波德地區聚會; 主要事工的對象為華人。 本教會的基本宗旨為榮神益人: 即接受主的 大使命, 在各地傳揚基督之福音。
@@ -91,6 +105,28 @@
 
 
     <script src="scripts/index.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
 </body>
 
 </html>
