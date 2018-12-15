@@ -1,0 +1,20 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    font-size: 16px;
+}
+
+.mySlides {
+    display: none;
+}
+
+* {
+    font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑";
+}
